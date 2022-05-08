@@ -9,6 +9,84 @@
     <link rel="shortcut icon" href="./src/images.jpg" type="image/x-icon">
     <title>Portafolio - Gustavo Silva</title>
 
+    <style>
+
+        #info
+        {
+            width: 60%; 
+            display: flex;
+            justify-content: space-around; 
+            margin: 2% 20%; 
+            border: 1px solid #dad9d9; 
+            border-radius: 3px; 
+            padding: 1em; 
+            background-color: #eeeaea; 
+            font-size: small;
+        }
+     
+        #info p
+        {
+            width: 50%;
+        }
+
+        #info img
+        {
+            display: inline-block; border-radius: 10px; width: 30%;
+        }
+
+        #homework
+        {
+            width: 75%; margin: 0 12%;background-color: #eeeaea;  border: 1px solid #dad9d9; border-radius: 6px; padding: 1.5em;
+        }
+
+        #composicion
+        {
+            display: flex; 
+            flex-flow: row wrap; 
+        }
+        
+        #composicion img
+        {
+            width: 100%;
+            height: 500px;
+            margin: 1% 0;
+        }
+
+        @media only screen and (max-width: 600px)
+        {
+            *
+            {
+                width: 100%;
+            }
+
+            #info
+            {
+                width: 100%;
+                margin: 2%;
+            }
+
+            #info img
+            {
+            display: inline-block; 
+            border-radius: 10px; 
+            width: 40%;
+            }
+
+            #homework
+            {
+                width: 100%;
+                margin: 1%;
+            }
+
+            #composicion img
+            {
+                height: 50vh;
+                width: 100%;
+                margin: 2% 0;
+            }
+        }
+    </style>
+
 </head>
 
 
@@ -19,18 +97,18 @@
         <hr>
         <br>
         <h4 class="fw-lighter text-center">Datos del estudiante</h4>
-        <div class="info" style="width: 50%; justify-content: space-around; display: flex; margin: 2% 25%; border: 1px solid #dad9d9; border-radius: 6px; padding: 1em; background-color: #eeeaea;">
+        <div id="info">
             <p>
               <strong> Nombre: </strong>  Gustavo A. Silva C. <br> <strong>Cédula de identidad: </strong>  30.620.210 <br> <strong> Asignatura: </strong> Matemáticas II - Sección 20. <br> <strong> Correo: </strong>  gustavoasc2004@gmail.com <br> <strong> Teléfono: </strong> 0424-8804974 <br><strong> Carrera: </strong> Ingeniería Química.
             </p>
-            <img src="./src/placeholder.png" alt="Foto de mi persona" style="display: inline-block; border-radius: 10px; width: 30%;">
+            <img src="./src/20220504_213905.jpg" alt="Foto de mi persona">
         </div>
 
         <h4 class="fw-lighter text-center">Unidad 0 - Evaluación 1</h4>
         
         <br> <br>
 
-        <div class="homework" style="width: 75%; margin: 0 12%;background-color: #eeeaea;  border: 1px solid #dad9d9; border-radius: 6px; padding: 1.5em;">
+        <div id="homework">
             <br>
             <ul class="fw-bolder">
                 <li class="h5">Entrada #1</li>
@@ -105,11 +183,19 @@
 
                     <br>
                     <p class="fw-lighter">
-                        Como es bien sabido, todas las enseñanzas impartidas en la universidad sobre matemática nos ayudarán en nuestra vida profesional. La labor principal del ingeniero es analizar y resolver problemas efectivamente, y para ello se puede acudir a todos estos programas que permiten la resolución de temas de cálculo mucho más rápido y con menos margen de error, además de poder visualizar un modelo 3D de forma inmediata, lo cual agiliza mucho la producción, lo que a su vez ayuda significativamente a la industria, porque al final no se busca quien haga el trabajo fuerte y laborioso, sino quien haga un trabajo inteligente que dé resultados buenos.
+                        Como es bien sabido, todas las enseñanzas impartidas en la universidad sobre matemática nos ayudarán en nuestra vida profesional. La labor principal del ingeniero es analizar y resolver problemas efectivamente, y para ello se puede acudir a todos estos programas que permiten la resolución de temas de cálculo mucho más rápido y con menos margen de error, además de poder visualizar un modelo 3D de forma inmediata, lo cual agiliza mucho la producción, lo que a su vez ayuda significativamente a la industria, porque al final no se busca quien haga el trabajo fuerte y laborioso, sino quien haga un trabajo inteligente que dé resultados buenos. 
                     </p>
                     <br>
                 </p>
                 <li class="h5">Entrada #3</li>
+                <h4 class="fw-normal text-center">Composición de imágenes</h4> <br> <br>
+                <p class="fw-normal"> En caso de que las imagenes no se visualicen correctamente, intente cambiando el tamaño de la página o utilice otro dispositivo.  </p> <br> <br>
+                <hr>
+                <div id="composicion">
+                    <img src="./src/2022-05-07_LI.jpg" alt="comp1">
+                    <img src="./src/2022-05-07 (2).png" alt="comp2">
+                    <img src="./src/2022-05-07 (1)_LI.jpg" alt="comp3">
+                </div>
             </ul>
         </div>
 
